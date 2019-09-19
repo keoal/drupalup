@@ -1,0 +1,27 @@
+.card__grid {
+  @include grid;
+  @include margin;
+}
+
+.card--grid-item-3 {
+  @include grid-item(3);
+}
+
+.card--grid-item-4 {
+  @include grid-item(4);
+}
+
+.card--divider-3 {
+  @include grid-divider(3);
+}
+
+.card--center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+  img {
+    margin: auto;
+  }
+}

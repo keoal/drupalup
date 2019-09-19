@@ -1,0 +1,22 @@
+card_modifiers:
+  2:
+    center
+
+# Title
+card_title:
+  'This is a card-avatar title'
+
+card_img_src:
+  "https://www.irishlife.ie/sites/retail/files/images/OnePlan%20Protection/LifeCare-Medcare.png"
+
+# Subtitle
+card_subtitle:
+
+# Link
+card_link_url:
+
+# Button
+card_button_url:
+  '#'
+card_button_content:
+  'Read more'

@@ -1,0 +1,10 @@
+mymodule_lib:
+  version: 1.0
+  css:
+    theme:
+      css/mymodule.custom.css: {}
+  js:
+    js/mymodule.custom.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings

@@ -1,0 +1,55 @@
+{% embed "@templates/_default.twig" with {
+  menu_items: header.templates.menu_items,
+  footer_menu_items: footer.templates.menu_items,
+} %}
+
+  {% block page_content %}
+
+    {% include "@atoms/04-images/00-image/_image.twig" with {
+    img_src: "https://placeimg.com/1400/350/tech"
+  } %}
+
+        {% include "@organisms/card-grid/card-grid.twig" with {
+      "grid_blockname": "card",
+      "grid_modifiers": ["divider", "columns-3"],
+      "cards": {
+        1: {
+          "card_modifiers": ["grid-item-3", "divider-3"],
+          "card_img_src": "https://placeimg.com/1400/350/tech",
+          "card_image_output_image_tag": TRUE,
+          "card_title": "This is the first featured item",
+          "card_link_url": "#",
+          "card_subtitle": "About this thing",
+          "card_body": "Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec rutrum congue leo eget malesuada. Proin eget tortor risus. Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat. Nulla quis lorem ut libero malesuada feugiat.",
+        },
+        2: {
+          "card_modifiers": ["grid-item-3","divider-3"],
+          "card_img_src": "https://placeimg.com/1400/350/tech",
+          "card_image_output_image_tag": TRUE,
+          "card_title": "This is the second",
+          "card_link_url": "#",
+          "card_subtitle": "About this other thing",
+          "card_body": "Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec rutrum congue leo eget malesuada. Proin eget tortor risus. Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat. Nulla quis lorem ut libero malesuada feugiat.",
+        },
+        3: {
+          "card_modifiers": ["grid-item-3","divider-3"],
+          "card_img_src": "https://placeimg.com/1400/350/tech",
+          "card_image_output_image_tag": TRUE,
+          "card_title": "The Final",
+          "card_link_url": "#",
+          "card_subtitle": "Is the most interesting",
+          "card_body": "Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec rutrum congue leo eget malesuada. Proin eget tortor risus. Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat. Nulla quis lorem ut libero malesuada feugiat.",
+        },
+      }
+      } %}
+    {% include "@templates/_place-holder.twig" with {
+          "place_holder": "Primary Content",
+        } %}
+
+    {% include "@templates/_place-holder.twig" with {
+      "place_holder": "Secondary Content",
+    } %}
+
+  {% endblock %}
+
+{% endembed %}

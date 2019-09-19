@@ -1,0 +1,14 @@
+grid_label:
+  "4-Column Divider Example"
+grid_modifiers:
+  1:
+    divider
+  2:
+    pl
+  3:
+    "columns-4"
+items:
+  one:
+  two:
+  three:
+  four:

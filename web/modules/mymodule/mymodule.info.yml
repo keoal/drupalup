@@ -1,0 +1,5 @@
+name: My Module
+type: module
+description: My first Drupal Module
+core: 8.x
+core/jquery: mytheme/jquery-custom

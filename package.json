@@ -1,0 +1,16 @@
+{
+  "name": "drupalup_comp",
+  "version": "1.0.0",
+  "description": "[![Build Status](https://travis-ci.org/drupal-composer/drupal-project.svg?branch=8.x)](https://travis-ci.org/drupal-composer/drupal-project)",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "jshint": "^2.10.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

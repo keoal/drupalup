@@ -1,0 +1,18 @@
+{% embed "@templates/_default.twig" with {
+  menu_items: header.templates.menu_items,
+  footer_menu_items: footer.templates.menu_items,
+} %}
+
+  {% block page_content %}
+    {% include "@templates/_place-holder.twig" with {
+      "place_holder": "Primary Content",
+    } %}
+    {% include "@atoms/04-images/00-image/_image.twig" with {
+    img_src: "https://placeimg.com/1400/350/tech"
+  } %}
+  {% include "@organisms/info-box-grid/info-box-grid.twig" %}
+  {% endblock %}
+
+
+
+{% endembed %}

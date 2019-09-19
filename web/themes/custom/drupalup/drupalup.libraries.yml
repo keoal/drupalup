@@ -1,0 +1,29 @@
+global:
+  css:
+    theme:
+      dist/style.css: {}
+
+Lato:
+  version: VERSION
+  css:
+    component:
+      fonts/lato.css: {}
+      //fonts.googleapis.com/css?family=Lato:300,400,600,700: {}
+
+main-menu:
+  js:
+    dist/02-molecules/menus/main-menu/main-menu.js: {}
+  dependencies:
+    - core/drupal
+
+sprite:
+  js:
+    components/js/svgxuse.min.js: { attributes: { defer: true } }
+
+accordion:
+  js:
+    dist/02-molecules/accordion-item/accordion-item.js: {}
+
+tabs:
+  js:
+    dist/02-molecules/menus/tabs/tabs.js: {}

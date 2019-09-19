@@ -1,0 +1,13 @@
+.info-box__grid {
+  @include grid;
+  @include margin;
+}
+
+.info-box--grid-item-4 {
+  @include grid-item(4);
+}
+
+.info-box--grid-footer {
+  background-color: $main_purple;
+  color: $white;
+}

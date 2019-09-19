@@ -1,0 +1,69 @@
+<footer class="footer">
+  {% block footer_content %}
+
+  {% include "@organisms/info-box-grid/info-box-grid.twig" with {
+    "boxes": {
+      1: {
+        "ib_modifiers": ["grid-item-4", "grid-footer"],
+        "infobox_img_src": "../../images/logo.png",
+        "infobox_title": "Test Title that is fairly long for a reason",
+      },
+      2: {
+        "ib_modifiers": ["grid-item-4", "grid-footer"],
+        "infobox_title": "Test Title that is fairly long for a reason",
+        "infobox_text": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.",
+        "infobox_link": "#",
+      },
+      3: {
+        "ib_modifiers": ["grid-item-4", "grid-footer"],
+        "infobox_title": "Test Title that is fairly long for a reason",
+        "infobox_text": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.",
+        "infobox_link": "#",
+      },
+      4: {
+        "ib_modifiers": ["grid-item-4", "grid-footer"],
+        "infobox_title": "Test Title that is fairly long for a reason",
+        "infobox_text": "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.",
+        "infobox_link": "#",
+      },
+    }
+  } %}
+
+  {% include "@organisms/card-grid/card-grid.twig" with {
+      
+      "cards": {
+        1: {
+          "card_modifiers": ["grid-item-3", "divider-3"],
+          "card_img_src": "https://placeimg.com/1400/350/tech",
+          "card_image_output_image_tag": TRUE,
+          "card_title": "This is the first featured item",
+          "card_link_url": "#",
+          "card_subtitle": "About this thing",
+          "card_body": "Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec rutrum congue leo eget malesuada. Proin eget tortor risus. Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat. Nulla quis lorem ut libero malesuada feugiat.",
+        },
+        2: {
+          "card_modifiers": ["grid-item-3","divider-3"],
+          "card_img_src": "https://placeimg.com/1400/350/tech",
+          "card_image_output_image_tag": TRUE,
+          "card_title": "This is the second",
+          "card_link_url": "#",
+          "card_subtitle": "About this other thing",
+          "card_body": "Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec rutrum congue leo eget malesuada. Proin eget tortor risus. Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat. Nulla quis lorem ut libero malesuada feugiat.",
+        },
+        3: {
+          "card_modifiers": ["grid-item-3","divider-3"],
+          "card_img_src": "https://placeimg.com/1400/350/tech",
+          "card_image_output_image_tag": TRUE,
+          "card_title": "The Final",
+          "card_link_url": "#",
+          "card_subtitle": "Is the most interesting",
+          "card_body": "Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec rutrum congue leo eget malesuada. Proin eget tortor risus. Sed porttitor lectus nibh. Nulla quis lorem ut libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Pellentesque in ipsum id orci porta dapibus. Nulla quis lorem ut libero malesuada feugiat. Nulla quis lorem ut libero malesuada feugiat.",
+        },
+      }
+      } %}
+
+    {% include "@molecules/menus/inline-menu/inline-menu.twig" with {
+      items: footer_menu_items
+    } %}
+  {% endblock %}
+</footer>

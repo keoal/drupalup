@@ -1,0 +1,45 @@
+$breadcrumb-active: #bbb;
+
+.breadcrumb {
+  @include list-reset;
+
+  &::after {
+    content: " ^ ";
+    color: $gray;
+  }
+}
+
+.breadcrumb__item,
+.breadcrumb__link,
+.breadcrumb__link:link,
+.breadcrumb__link:visited {
+  color: $tourquise;
+  text-decoration: none;
+}
+
+.breadcrumb__link:hover,
+.breadcrumb__link:focus {
+  color: $gray;
+}
+
+.breadcrumb__item {
+  display: inline-block;
+  font-size: 1rem;
+
+  &::after {
+    content: " >> ";
+    color: $gray;
+  }
+
+  &:last-child {
+    color: $breadcrumb-active;
+
+    &::after {
+      content: "";
+    }
+  }
+}
+
+.breadcrumb_link:active {
+  color: $breadcrumb-active;
+}

@@ -1,0 +1,65 @@
+items:
+  - name: $white
+    value: white
+  - name: $near-white
+    value: '#f2f2f2'
+  - name: $gray-lightest
+    value: '#e5e5e5'
+  - name: $gray-lighter
+    value: '#ccc'
+  - name: $gray-light
+    value: '#999'
+  - name: $gray
+    value: '#666'
+  - name: $gray-dark
+    value: '#4c4c4c'
+  - name: $gray-darker
+    value: '#333'
+  - name: $black
+    value: black
+  - name: $green
+    value: '#060'
+  - name: $dark-green
+    value: '#24847c'
+  - name: $main_purple
+    value: '#5261ac'
+  - name: $black
+    value: '#333'
+  - name: $teal
+    value: '#50c9b5'
+  - name: $warm_grey
+    value: '#675c53'
+  - name: $green
+    value: '#69923a'
+  - name: $dark_blue
+    value: '#002664'
+  - name: $mid_blue
+    value: '#5582ab'
+  - name: $very_light_grey
+    value: '#edeaed'
+  - name: $medium_grey
+    value: '#aaa38e'
+  - name: $very_light_blue
+    value: '#aacae6'
+  - name: $tourquise
+    value: '#00add0'
+  - name: $mid_purple
+    value: '#502dff'
+  - name: $il-purple
+    value: '#5261ac'
+  - name: $il-green
+    value: '#50c985'
+  - name: $il-grey
+    value: '#606060'
+  - name: $il-black
+    value: '#333'
+  - name: $dark-green
+    value: '#24847c'
+  - name: $il-indigo
+    value: '#026'
+  - name: $dark-purple
+    value: '#475496'
+meta:
+  description: >-
+    To add to these items, use Sass variables that start with <code>$</code> in
+    <code>.//components/_patterns/00-base/global/01-colors/_color-vars.scss</code>
